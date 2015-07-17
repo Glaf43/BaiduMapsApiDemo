@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Mark Nguyen\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-1ce1641b48601ca841f0caf4571f9e09579596b0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\libs\locSDK_5.2.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="389047997db28fcb848dc4247c5590a08b7ff769">
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\locSDK_5.2-cfee6380c627a06d88f23fa1b9bbf376d7d9c3dd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\libs\baidumapapi_v3_5_0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="ba79500bb64218f10b5fd0d5ea54503b2bf6b3bb">
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\baidumapapi_v3_5_0-59f5bdafa89960acc0fa87dbaca26786979954dd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mark Nguyen\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-1ce1641b48601ca841f0caf4571f9e09579596b0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\libs\baidumapapi_v3_5_0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="ba79500bb64218f10b5fd0d5ea54503b2bf6b3bb">
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\baidumapapi_v3_5_0-59f5bdafa89960acc0fa87dbaca26786979954dd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\libs\locSDK_5.2.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="389047997db28fcb848dc4247c5590a08b7ff769">
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\locSDK_5.2-cfee6380c627a06d88f23fa1b9bbf376d7d9c3dd.jar" />
+    </item>
+
+</items>
