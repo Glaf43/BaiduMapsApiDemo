@@ -1,10 +1,12 @@
 package baidumapsdk.demo;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.baidu.mapapi.map.BaiduMap;
@@ -34,10 +36,11 @@ public class TestingOnClick extends Activity {
     private Marker mMarkerC;
     private Marker mMarkerD;
 
-    double latitude;
-    double longitude ;
-    public Double Lng = null;
-    GPSTracker gps;
+    private Button button0;
+    private Button button5;
+    private Button button10;
+    private Button button15;
+
 
     final LatLng point1 = new LatLng(24.45643, 118.086922);
     final LatLng point2 = new LatLng(24.455612, 118.085655);
@@ -46,51 +49,91 @@ public class TestingOnClick extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_testing_on_click);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_testing_on_click);
 
+        button0=(Button) findViewById(R.id.zero);
+        button5=(Button) findViewById(R.id.five);
+        button10=(Button) findViewById(R.id.ten);
+        button15=(Button) findViewById(R.id.fifteen);
 
+        mMapView = (MapView) findViewById(R.id.bmapView);
+        MapStatus ms = new MapStatus.Builder().overlook(-20).zoom(15).build();
 
-            System.out.println(Double.toString(point1.latitude));
-            System.out.println(Double.toString(point1.latitude));
+        mBaiduMap = mMapView.getMap();
 
-            mMapView = (MapView) findViewById(R.id.bmapView);
-            MapStatus ms = new MapStatus.Builder().overlook(-20).zoom(15).build();
-
-            mBaiduMap = mMapView.getMap();
-
-
-
-            mBaiduMap.setOnMarkerClickListener(new BaiduMap.OnMarkerClickListener() {
-                public boolean onMarkerClick(final Marker marker) {
-                    if (marker == mMarkerA) {
-                        Toast.makeText(getApplicationContext(), Double.toString(point1.latitude)+"   "+Double.toString(point1.longitude),
-                                Toast.LENGTH_LONG).show();
-                    } else if (marker == mMarkerB) {
-                        Toast.makeText(getApplicationContext(), Double.toString(point2.latitude)+"   "+Double.toString(point2.longitude),
-                                Toast.LENGTH_LONG).show();
-                        System.out.println(point2.latitude);
-                        System.out.println(point2.longitude);
-                    } else if (marker == mMarkerC) {
-                        Toast.makeText(getApplicationContext(), Double.toString(point3.latitude)+"   "+Double.toString(point3.longitude),
-                                Toast.LENGTH_LONG).show();
-                        System.out.println(point3.latitude);
-                        System.out.println(point3.longitude);
-                    } else {
-                        Toast.makeText(getApplicationContext(), Double.toString(point4.latitude)+"   "+Double.toString(point4.longitude),
-                                Toast.LENGTH_LONG).show();
-                        System.out.println(point4.latitude);
-                        System.out.println(point4.longitude);
-                    }
-                    return true;
+        mBaiduMap.setOnMarkerClickListener(new BaiduMap.OnMarkerClickListener() {
+            public boolean onMarkerClick(final Marker marker) {
+                if (marker == mMarkerA) {
+                    Toast.makeText(getApplicationContext(), Double.toString(point1.latitude)+"   "+Double.toString(point1.longitude),
+                            Toast.LENGTH_LONG).show();
+                    enableRewardButton();
+                } else if (marker == mMarkerB) {
+                    Toast.makeText(getApplicationContext(), Double.toString(point2.latitude)+"   "+Double.toString(point2.longitude),
+                            Toast.LENGTH_LONG).show();
+                    enableRewardButton();
+                } else if (marker == mMarkerC) {
+                    Toast.makeText(getApplicationContext(), Double.toString(point3.latitude)+"   "+Double.toString(point3.longitude),
+                            Toast.LENGTH_LONG).show();
+                    enableRewardButton();
+                } else {
+                    Toast.makeText(getApplicationContext(), Double.toString(point4.latitude)+"   "+Double.toString(point4.longitude),
+                            Toast.LENGTH_LONG).show();
+                    enableRewardButton();
                 }
-            });
+                return true;
+            }
+        });
 
             //zoom
             MapStatusUpdate msu = MapStatusUpdateFactory.zoomTo(18.0f);
             mBaiduMap.setMapStatus(msu);
 
         }
+
+    public void enableRewardButton(){
+        button0.setVisibility(View.VISIBLE);
+        button0.setEnabled(true);
+        button0.setClickable(true);
+        button0.setBackgroundColor(Color.BLACK);
+
+        button5.setVisibility(View.VISIBLE);
+        button5.setEnabled(true);
+        button5.setClickable(true);
+        button5.setBackgroundColor(Color.BLACK);
+
+        button10.setVisibility(View.VISIBLE);
+        button10.setEnabled(true);
+        button10.setClickable(true);
+        button10.setBackgroundColor(Color.BLACK);
+
+        button15.setVisibility(View.VISIBLE);
+        button15.setEnabled(true);
+        button15.setClickable(true);
+        button15.setBackgroundColor(Color.BLACK);
+    }
+
+    public void unEnableRewardButton(){
+        button0.setVisibility(View.INVISIBLE);
+        button0.setEnabled(false);
+        button0.setClickable(false);
+        //button0.setBackgroundColor(Color.BLACK);
+
+        button5.setVisibility(View.INVISIBLE);
+        button5.setEnabled(false);
+        button5.setClickable(false);
+        //button5.setBackgroundColor(Color.BLACK);
+
+        button10.setVisibility(View.INVISIBLE);
+        button10.setEnabled(false);
+        button10.setClickable(false);
+        //button10.setBackgroundColor(Color.BLACK);
+
+        button15.setVisibility(View.INVISIBLE);
+        button15.setEnabled(false);
+        button15.setClickable(false);
+        //button15.setBackgroundColor(Color.BLACK);
+    }
 
     public void initialMarker(){
         mBaiduMap.setMapStatus(MapStatusUpdateFactory.newLatLng(point1));
@@ -145,6 +188,12 @@ public class TestingOnClick extends Activity {
     }
 
     public void Cancel(View view){
+        mMarkerA.remove();
+        mMarkerB.remove();
+        mMarkerC.remove();
+        mMarkerD.remove();
+        //mBaiduMap.set
+        unEnableRewardButton();
 
     }
     public void Search(View view){

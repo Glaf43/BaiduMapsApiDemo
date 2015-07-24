@@ -22,7 +22,7 @@
             android:layout_weight="1"
             android:onClick="Cancel"
             android:padding="10dip"
-            android:text="clear" />
+            android:text="Cancel" />
 
         <Button
             android:id="@+id/search"
@@ -41,7 +41,62 @@
         android:id="@+id/bmapView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/linearLayout" />
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fbfffa"
+        android:text="       $0     "
+        android:id="@+id/zero"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/bmapView"
+        android:layout_marginBottom="43dp"
+        android:layout_marginRight="3dip"
+        android:layout_marginLeft="3dip"
+        android:enabled="false"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fbfffa"
+        android:text="       $5      "
+        android:id="@+id/five"
+        android:enabled="false"
+        android:layout_marginRight="3dip"
+        android:layout_marginLeft="3dip"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/zero"
+        android:layout_toRightOf="@+id/zero" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fbfffa"
+        android:text="      $10      "
+        android:id="@+id/ten"
+        android:layout_alignTop="@+id/five"
+        android:layout_toLeftOf="@+id/fifteen"
+        android:layout_marginRight="3dip"
+        android:layout_marginLeft="3dip"
+        android:enabled="false"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fbfffa"
+        android:text="      $15      "
+        android:id="@+id/fifteen"
+        android:layout_alignBottom="@+id/ten"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dip"
+        android:layout_marginLeft="3dip"
+        android:enabled="false"
+        android:visibility="invisible"/>
 
 
 </RelativeLayout>
