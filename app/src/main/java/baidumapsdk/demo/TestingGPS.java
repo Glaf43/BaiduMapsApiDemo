@@ -56,7 +56,7 @@ public class TestingGPS extends Activity {
         if(gps.canGetLocation()) {
              latitude = gps.getLatitude();
              longitude = gps.getLongitude();
-            Toast.makeText(getApplicationContext(), Double.toString(point.latitude)+" "+Double.toString(point.longitude),
+            Toast.makeText(getApplicationContext(), Double.toString(point.latitude)+"     "+Double.toString(point.longitude),
                     Toast.LENGTH_LONG).show();
         }
         else{
