@@ -379,9 +379,15 @@ ADDED from AndroidManifest.xml:221:9
 		ADDED from AndroidManifest.xml:224:13
 	android:name
 		ADDED from AndroidManifest.xml:222:13
-activity#baidumapsdk.demo.Testing
+activity#baidumapsdk.demo.TestingGPS
 ADDED from AndroidManifest.xml:227:9
 	android:label
 		ADDED from AndroidManifest.xml:229:13
 	android:name
 		ADDED from AndroidManifest.xml:228:13
+activity#baidumapsdk.demo.TestingOnClick
+ADDED from AndroidManifest.xml:231:9
+	android:label
+		ADDED from AndroidManifest.xml:233:13
+	android:name
+		ADDED from AndroidManifest.xml:232:13

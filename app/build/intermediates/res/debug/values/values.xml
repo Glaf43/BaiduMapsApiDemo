@@ -88,11 +88,13 @@
                 \t\t例如，用户搜索“百度大厦”后通过短信使用短串分享功能把该地点分享给好友，好友点击短信中的短串“http://j.map.baidu.com/XLCrk”后可以调起百度地图客户端或者手机浏览器查看“百度大厦”的地理位置信息。\n\n
                 \t\t目前短串分享功能暂时开放了“POI搜索结果分享”和“反向地理编码结果分享”，日后会开放更多的功能，欢迎广大开发者使用短
 </string>
-    <string name="testing">Testing Map</string>
+    <string name="testingGPS">Testing GPS</string>
+    <string name="testingOnClick">Testing OnClick</string>
     <string name="title_activity_cloud_search_demo">云检索使用介绍</string>
     <string name="title_activity_panorama_activity_main">全景图功能</string>
     <string name="title_activity_panorama_demo">全景图功能</string>
     <string name="title_activity_panorama_geo_selector">通过地理坐标进入全景图</string>
     <string name="title_activity_panorama_poi_selector">通过POI进入全景图</string>
     <string name="title_activity_testing">Testing</string>
+    <string name="title_activity_testing_on_click">TestingOnClick</string>
 </resources>

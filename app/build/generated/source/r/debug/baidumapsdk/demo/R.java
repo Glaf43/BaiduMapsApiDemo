@@ -204,14 +204,16 @@ public final class R {
         public static final int activity_share_demo=0x7f030018;
         public static final int activity_share_demo_activity=0x7f030019;
         public static final int activity_testing=0x7f03001a;
-        public static final int activity_uisetting=0x7f03001b;
-        public static final int custom_text_view=0x7f03001c;
-        public static final int demo_info_item=0x7f03001d;
-        public static final int main=0x7f03001e;
-        public static final int offline_localmap_list=0x7f03001f;
+        public static final int activity_testing_on_click=0x7f03001b;
+        public static final int activity_uisetting=0x7f03001c;
+        public static final int custom_text_view=0x7f03001d;
+        public static final int demo_info_item=0x7f03001e;
+        public static final int main=0x7f03001f;
+        public static final int offline_localmap_list=0x7f030020;
     }
     public static final class menu {
         public static final int menu_testing=0x7f070000;
+        public static final int menu_testing_on_click=0x7f070001;
     }
     public static final class raw {
         public static final int locations=0x7f040000;
@@ -290,12 +292,14 @@ public final class R {
         public static final int panorama_poi_tips=0x7f060046;
         public static final int panorama_tips=0x7f060047;
         public static final int share_tip=0x7f060048;
-        public static final int testing=0x7f060049;
-        public static final int title_activity_cloud_search_demo=0x7f06004a;
-        public static final int title_activity_panorama_activity_main=0x7f06004b;
-        public static final int title_activity_panorama_demo=0x7f06004c;
-        public static final int title_activity_panorama_geo_selector=0x7f06004d;
-        public static final int title_activity_panorama_poi_selector=0x7f06004e;
-        public static final int title_activity_testing=0x7f06004f;
+        public static final int testingGPS=0x7f060049;
+        public static final int testingOnClick=0x7f06004a;
+        public static final int title_activity_cloud_search_demo=0x7f06004b;
+        public static final int title_activity_panorama_activity_main=0x7f06004c;
+        public static final int title_activity_panorama_demo=0x7f06004d;
+        public static final int title_activity_panorama_geo_selector=0x7f06004e;
+        public static final int title_activity_panorama_poi_selector=0x7f06004f;
+        public static final int title_activity_testing=0x7f060050;
+        public static final int title_activity_testing_on_click=0x7f060051;
     }
 }

@@ -3,13 +3,19 @@ package baidumapsdk.demo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BaiduMapOptions;
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
+import com.baidu.mapapi.map.InfoWindow;
 import com.baidu.mapapi.map.MapStatus;
+import com.baidu.mapapi.map.MapStatusUpdate;
+import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
+import com.baidu.mapapi.map.Marker;
 import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
@@ -18,60 +24,93 @@ import com.baidu.mapapi.model.LatLng;
  * 演示MapView的基本用法
  */
 public class BaseMapDemo extends Activity {
-	@SuppressWarnings("unused")
-	private static final String LTAG = BaseMapDemo.class.getSimpleName();
+	//@SuppressWarnings("unused")
+	//private static final String LTAG = BaseMapDemo.class.getSimpleName();
 	private MapView mMapView;
 	private BaiduMap mBaiduMap;
 
-	private static final LatLng GEO_BEIJING = new LatLng(24.45643, 118.086922);
-	private static final LatLng GEO_SHANGHAI = new LatLng(24.455612, 118.085655);
-	private static final LatLng GEO_GUANGZHOU = new LatLng(24.455739, 118.085516);
-	private static final LatLng GEO_SHENGZHENG = new LatLng(24.458634, 118.088444);
-
-
+	private Marker mMarkerA;
+	private Marker mMarkerB;
+	private Marker mMarkerC;
+	private Marker mMarkerD;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//Intent intent = getIntent();
 		//Bundle b = intent.getExtras();
-		LatLng point = new LatLng(24.45643, 118.086922);
+		final LatLng point1 = new LatLng(24.45643, 118.086922);
+		final LatLng point2 = new LatLng(24.455612, 118.085655);
+		final LatLng point3 = new LatLng(24.455739, 118.085516);
+		final LatLng point4 = new LatLng(24.458634, 118.088444);
+
+		System.out.println(Double.toString(point1.latitude));
+		System.out.println(Double.toString(point1.latitude));
+
+		System.out.println("BaseMapDemo");
+
 		mMapView = new MapView(this,
 				new BaiduMapOptions().mapStatus(new MapStatus.Builder()
-					.target(point).build()));
+					.target(point1).build()));
 
 		MapStatus ms = new MapStatus.Builder().overlook(-20).zoom(15).build();
 
 
 		mBaiduMap = mMapView.getMap();
-		BitmapDescriptor bitmap = BitmapDescriptorFactory
+
+		MapStatusUpdate msu = MapStatusUpdateFactory.zoomTo(18.0f);
+		mBaiduMap.setMapStatus(msu);
+
+		BitmapDescriptor bitmapA = BitmapDescriptorFactory
 				.fromResource(R.drawable.icon_marka);
+		BitmapDescriptor bitmapB = BitmapDescriptorFactory
+				.fromResource(R.drawable.icon_markb);
+		BitmapDescriptor bitmapC = BitmapDescriptorFactory
+				.fromResource(R.drawable.icon_markc);
+		BitmapDescriptor bitmapD = BitmapDescriptorFactory
+				.fromResource(R.drawable.icon_markd);
 
 		//构建MarkerOption，用于在地图上添加Marker
 
-		LatLng point2 = new LatLng(24.455612, 118.085655);
-		LatLng point3 = new LatLng(24.455739, 118.085516);
-		LatLng point4 = new LatLng(24.458634, 118.088444);
 
-		OverlayOptions option = new MarkerOptions()
-				.position(point)
-				.icon(bitmap);
 
+		OverlayOptions option1 = new MarkerOptions()
+				.position(point1)
+				.icon(bitmapA);
 		OverlayOptions option2 = new MarkerOptions()
 				.position(point2)
-				.icon(bitmap);
+				.icon(bitmapB);
 		OverlayOptions option3 = new MarkerOptions()
 				.position(point3)
-				.icon(bitmap);
+				.icon(bitmapC);
 		OverlayOptions option4 = new MarkerOptions()
 				.position(point4)
-				.icon(bitmap);
+				.icon(bitmapD);
 		//在地图上添加Marker，并显示
-		mBaiduMap.addOverlay(option);
-		mBaiduMap.addOverlay(option2);
-		mBaiduMap.addOverlay(option3);
-		mBaiduMap.addOverlay(option4);
+		mMarkerA = (Marker) (mBaiduMap.addOverlay(option1));
+		mMarkerB = (Marker) (mBaiduMap.addOverlay(option2));
+		mMarkerC = (Marker) (mBaiduMap.addOverlay(option3));
+		mMarkerD = (Marker) (mBaiduMap.addOverlay(option4));
 
+		mBaiduMap.setOnMarkerClickListener(new BaiduMap.OnMarkerClickListener() {
+			public boolean onMarkerClick(final Marker marker) {
+				if (marker == mMarkerA) {
+					System.out.println(point1.latitude);
+					System.out.println(point1.longitude);
+				} else if (marker == mMarkerB) {
+					System.out.println(point2.latitude);
+					System.out.println(point2.longitude);
+				} else if (marker == mMarkerC) {
+					System.out.println(point3.latitude);
+					System.out.println(point3.longitude);
+				}
+				else {
+					System.out.println(point4.latitude);
+					System.out.println(point4.longitude);
+				}
+				return true;
+			}
+		});
 
 		setContentView(mMapView);
 

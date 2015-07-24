@@ -74,8 +74,10 @@ public class BMapApiDemoMain extends Activity {
 	}
 
 	private static final DemoInfo[] demos = {
-			new DemoInfo(R.string.testing,
-					R.string.testing, Testing.class),
+			new DemoInfo(R.string.testingGPS,
+					R.string.testingGPS, TestingGPS.class),
+			new DemoInfo(R.string.testingOnClick,
+					R.string.testingOnClick, TestingOnClick.class),
 			new DemoInfo(R.string.demo_title_basemap,
 					R.string.demo_desc_basemap, BaseMapDemo.class),
 			new DemoInfo(R.string.demo_title_map_fragment,

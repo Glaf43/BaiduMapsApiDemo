@@ -225,8 +225,12 @@
         </service>
 
         <activity
-            android:name="baidumapsdk.demo.Testing"
+            android:name="baidumapsdk.demo.TestingGPS"
             android:label="@string/title_activity_testing" >
+        </activity>
+        <activity
+            android:name="baidumapsdk.demo.TestingOnClick"
+            android:label="@string/title_activity_testing_on_click" >
         </activity>
     </application>
 

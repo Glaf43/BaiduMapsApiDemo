@@ -225,8 +225,12 @@
         </service>
 
         <activity
-            android:name=".Testing"
+            android:name=".TestingGPS"
             android:label="@string/title_activity_testing" >
+        </activity>
+        <activity
+            android:name=".TestingOnClick"
+            android:label="@string/title_activity_testing_on_click" >
         </activity>
     </application>
 
