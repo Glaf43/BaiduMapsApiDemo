@@ -2,5 +2,6 @@
 
 # Files used for testing
 # BaseMapDemo
-# Testing 
+# TestingGPS (previous name: Testing)
+# TestingOnclick
 # GPSTracker 
