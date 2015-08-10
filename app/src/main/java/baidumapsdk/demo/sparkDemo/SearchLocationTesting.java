@@ -1,6 +1,7 @@
 package baidumapsdk.demo.sparkDemo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -65,19 +66,19 @@ public class SearchLocationTesting extends Activity {
         mBaiduMap.setOnMarkerClickListener(new BaiduMap.OnMarkerClickListener() {
             public boolean onMarkerClick(final Marker marker) {
                 if (marker == mMarkerA) {
-                    Toast.makeText(getApplicationContext(), Double.toString(point1.latitude)+"   "+Double.toString(point1.longitude),
+                    Toast.makeText(getApplicationContext(), Double.toString(point1.latitude) + "   " + Double.toString(point1.longitude),
                             Toast.LENGTH_LONG).show();
                     enableRewardButton();
                 } else if (marker == mMarkerB) {
-                    Toast.makeText(getApplicationContext(), Double.toString(point2.latitude)+"   "+Double.toString(point2.longitude),
+                    Toast.makeText(getApplicationContext(), Double.toString(point2.latitude) + "   " + Double.toString(point2.longitude),
                             Toast.LENGTH_LONG).show();
                     enableRewardButton();
                 } else if (marker == mMarkerC) {
-                    Toast.makeText(getApplicationContext(), Double.toString(point3.latitude)+"   "+Double.toString(point3.longitude),
+                    Toast.makeText(getApplicationContext(), Double.toString(point3.latitude) + "   " + Double.toString(point3.longitude),
                             Toast.LENGTH_LONG).show();
                     enableRewardButton();
                 } else {
-                    Toast.makeText(getApplicationContext(), Double.toString(point4.latitude)+"   "+Double.toString(point4.longitude),
+                    Toast.makeText(getApplicationContext(), Double.toString(point4.latitude) + "   " + Double.toString(point4.longitude),
                             Toast.LENGTH_LONG).show();
                     enableRewardButton();
                 }
@@ -97,42 +98,71 @@ public class SearchLocationTesting extends Activity {
         button0.setClickable(true);
         button0.setBackgroundColor(Color.BLACK);
 
+        button0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SearchLocationTesting.this, CommunicationChannelTesting.class);
+                startActivity(intent);
+            }
+        });
+
         button5.setVisibility(View.VISIBLE);
         button5.setEnabled(true);
         button5.setClickable(true);
         button5.setBackgroundColor(Color.BLACK);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SearchLocationTesting.this, CommunicationChannelTesting.class);
+                startActivity(intent);
+            }
+        });
 
         button10.setVisibility(View.VISIBLE);
         button10.setEnabled(true);
         button10.setClickable(true);
         button10.setBackgroundColor(Color.BLACK);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SearchLocationTesting.this, CommunicationChannelTesting.class);
+                startActivity(intent);
+            }
+        });
 
         button15.setVisibility(View.VISIBLE);
         button15.setEnabled(true);
         button15.setClickable(true);
         button15.setBackgroundColor(Color.BLACK);
+        button15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SearchLocationTesting.this, CommunicationChannelTesting.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void unEnableRewardButton(){
         button0.setVisibility(View.INVISIBLE);
         button0.setEnabled(false);
         button0.setClickable(false);
-        //button0.setBackgroundColor(Color.BLACK);
+
 
         button5.setVisibility(View.INVISIBLE);
         button5.setEnabled(false);
         button5.setClickable(false);
-        //button5.setBackgroundColor(Color.BLACK);
+
 
         button10.setVisibility(View.INVISIBLE);
         button10.setEnabled(false);
         button10.setClickable(false);
-        //button10.setBackgroundColor(Color.BLACK);
+
 
         button15.setVisibility(View.INVISIBLE);
         button15.setEnabled(false);
         button15.setClickable(false);
-        //button15.setBackgroundColor(Color.BLACK);
+
     }
 
     public void initialMarker(){

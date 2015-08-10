@@ -9,20 +9,27 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:id="@+id/linearLayout">
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
 
         <Button
-            android:id="@+id/cancel"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:id="@+id/successful"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="2dip"
             android:layout_marginLeft="2dip"
             android:layout_marginRight="2dip"
             android:layout_marginTop="2dip"
-            android:layout_weight="1"
-            android:onClick="Cancel"
+            android:onClick="Success"
             android:padding="10dip"
-            android:text="@string/CancelButton" />
+            android:text="@string/SuccessfulButton" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CancelButton"
+            android:id="@+id/CancelCommunication"
+            android:onClick="CancelCommunication"/>
 
     </LinearLayout>
 

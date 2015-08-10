@@ -8,6 +8,7 @@
     <eat-comment/>
     <string name="CancelButton">Cancel</string>
     <string name="SearchButton">Search</string>
+    <string name="SuccessfulButton">Successful</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">百度地图SDK DEMO</string>
     <string name="cloud_search_tips"> \t\tLBS.云是百度地图针对LBS开发者推出的平台级服务。结合已有的地图API和SDK服务。通过开放服务端存储和计算能力,提供海量位置数据存储、检索、展示一体化解决方案。\n\n

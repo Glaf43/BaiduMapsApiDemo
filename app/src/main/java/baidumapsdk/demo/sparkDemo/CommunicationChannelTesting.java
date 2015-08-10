@@ -1,6 +1,7 @@
 package baidumapsdk.demo.sparkDemo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.DataSetObserver;
 import android.graphics.Color;
@@ -132,6 +133,7 @@ public class CommunicationChannelTesting extends Activity {
         mMarkerD = (Marker) (mBaiduMap.addOverlay(option4));
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -154,13 +156,15 @@ public class CommunicationChannelTesting extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void Cancel(View view){
-        mMarkerA.remove();
-        mMarkerB.remove();
-        mMarkerC.remove();
-        mMarkerD.remove();
+    public void Success(View view){
 
     }
+
+    public void CancelCommunication(View view){
+        Intent intent = new Intent(CommunicationChannelTesting.this, SearchLocationTesting.class);
+        startActivity(intent);
+    }
+
     private void sendMessage() {
         EditText inputText = (EditText) findViewById(R.id.messageInput);
         String input = inputText.getText().toString();

@@ -12,7 +12,7 @@
         android:id="@+id/linearLayout">
 
         <Button
-            android:id="@+id/cancel"
+            android:id="@+id/CancelButton"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginBottom="2dip"
