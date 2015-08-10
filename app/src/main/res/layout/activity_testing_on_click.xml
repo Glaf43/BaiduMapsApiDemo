@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context="baidumapsdk.demo.TestingOnClick">
+    tools:context="baidumapsdk.demo.sparkDemo.SearchLocationTesting">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -22,7 +22,7 @@
             android:layout_weight="1"
             android:onClick="Cancel"
             android:padding="10dip"
-            android:text="Cancel" />
+            android:text="@string/CancelButton" />
 
         <Button
             android:id="@+id/search"
@@ -34,7 +34,8 @@
             android:layout_marginTop="2dip"
             android:layout_weight="1"
             android:onClick="Search"
-            android:text="Search" />
+            android:text="@string/SearchButton" />
+
     </LinearLayout>
 
     <com.baidu.mapapi.map.MapView

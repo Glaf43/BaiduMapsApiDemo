@@ -24,6 +24,8 @@ import com.baidu.mapapi.map.offline.MKOLUpdateElement;
 import com.baidu.mapapi.map.offline.MKOfflineMap;
 import com.baidu.mapapi.map.offline.MKOfflineMapListener;
 
+import baidumapsdk.demo.sparkDemo.BaseMapDemo;
+
 public class OfflineDemo extends Activity implements MKOfflineMapListener {
 
 	private MKOfflineMap mOffline = null;

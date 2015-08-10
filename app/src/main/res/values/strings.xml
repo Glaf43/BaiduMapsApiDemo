@@ -4,6 +4,7 @@
     <string name="app_name">百度地图SDK DEMO</string>
     <string name="testingGPS">Testing GPS</string>
     <string name="testingOnClick">Testing OnClick</string>
+    <string name="communicationChannelTesting">Testing Communication Channel</string>
     <string name="demo_name_basemap">基本地图功能</string>
     <string name="demo_title_basemap">基本地图功能--BaseMapDemo</string>
     <string name="demo_desc_basemap">创建一张百度地图并管理地图的生命周期</string>
@@ -91,7 +92,14 @@
     <string name="title_activity_testing">Testing</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="SearchButton">Search</string>
+    <string name="CancelButton">Cancel</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_testing_on_click">TestingOnClick</string>
+    <string name="title_activity_communication_channel_testing">CommunicationChannelTesting</string>
+
+
+
+
 
 </resources>

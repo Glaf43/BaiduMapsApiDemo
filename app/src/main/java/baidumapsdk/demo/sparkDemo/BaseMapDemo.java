@@ -1,4 +1,4 @@
-package baidumapsdk.demo;
+package baidumapsdk.demo.sparkDemo;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -19,6 +19,8 @@ import com.baidu.mapapi.map.Marker;
 import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
+
+import baidumapsdk.demo.R;
 
 /**
  * 演示MapView的基本用法

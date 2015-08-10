@@ -60,7 +60,7 @@
         android:label="@string/app_name" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="SVkHNMMsU5Eqxy3M0a9MsTVs" />
+            android:value="kXZjF5CB4sunDfUV800AZvki" />
 
         <activity
             android:name="baidumapsdk.demo.BMapApiDemoMain"
@@ -74,7 +74,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="baidumapsdk.demo.BaseMapDemo"
+            android:name="baidumapsdk.demo.sparkDemo.BaseMapDemo"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/demo_name_basemap"
             android:screenOrientation="portrait" >
@@ -225,12 +225,17 @@
         </service>
 
         <activity
-            android:name="baidumapsdk.demo.TestingGPS"
+            android:name="baidumapsdk.demo.sparkDemo.TestingGPS"
             android:label="@string/title_activity_testing" >
         </activity>
         <activity
-            android:name="baidumapsdk.demo.TestingOnClick"
+            android:name="baidumapsdk.demo.sparkDemo.SearchLocationTesting"
             android:label="@string/title_activity_testing_on_click" >
+        </activity>
+        <activity
+            android:name="baidumapsdk.demo.sparkDemo.CommunicationChannelTesting"
+            android:label="@string/title_activity_communication_channel_testing"
+            android:windowSoftInputMode="stateHidden" >
         </activity>
     </application>
 

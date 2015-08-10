@@ -1,4 +1,4 @@
-package baidumapsdk.demo;
+package baidumapsdk.demo.sparkDemo;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -24,7 +24,7 @@ import com.baidu.mapapi.model.LatLng;
 
 import baidumapsdk.demo.R;
 
-public class TestingOnClick extends Activity {
+public class SearchLocationTesting extends Activity {
     //private static final String LTAG = MapFragmentDemo.class.getSimpleName();
     SupportMapFragment map;
 

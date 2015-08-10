@@ -19,6 +19,11 @@ import android.widget.TextView;
 import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.VersionInfo;
 
+import baidumapsdk.demo.sparkDemo.BaseMapDemo;
+import baidumapsdk.demo.sparkDemo.CommunicationChannelTesting;
+import baidumapsdk.demo.sparkDemo.TestingGPS;
+import baidumapsdk.demo.sparkDemo.SearchLocationTesting;
+
 public class BMapApiDemoMain extends Activity {
 	private static final String LTAG = BMapApiDemoMain.class.getSimpleName();
 
@@ -77,7 +82,9 @@ public class BMapApiDemoMain extends Activity {
 			new DemoInfo(R.string.testingGPS,
 					R.string.testingGPS, TestingGPS.class),
 			new DemoInfo(R.string.testingOnClick,
-					R.string.testingOnClick, TestingOnClick.class),
+					R.string.testingOnClick, SearchLocationTesting.class),
+			new DemoInfo(R.string.communicationChannelTesting,
+					R.string.communicationChannelTesting, CommunicationChannelTesting.class),
 			new DemoInfo(R.string.demo_title_basemap,
 					R.string.demo_desc_basemap, BaseMapDemo.class),
 			new DemoInfo(R.string.demo_title_map_fragment,

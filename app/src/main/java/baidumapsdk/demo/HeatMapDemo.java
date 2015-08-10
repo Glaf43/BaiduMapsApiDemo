@@ -22,6 +22,8 @@ import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.model.LatLng;
 
+import baidumapsdk.demo.sparkDemo.BaseMapDemo;
+
 /**
  * 热力图功能demo
  */
