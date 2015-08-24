@@ -1,4 +1,4 @@
-package baidumapsdk.demo;
+package baidumapsdk.demo.sparkDemo;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -26,6 +26,8 @@ import com.baidu.mapapi.search.sug.OnGetSuggestionResultListener;
 import com.baidu.mapapi.search.sug.SuggestionResult;
 import com.baidu.mapapi.search.sug.SuggestionSearch;
 import com.baidu.mapapi.search.sug.SuggestionSearchOption;
+
+import baidumapsdk.demo.R;
 
 /**
  * 演示poi搜索功能
@@ -175,8 +177,11 @@ public class PoiSearchDemo extends FragmentActivity implements
 			Toast.makeText(PoiSearchDemo.this, "抱歉，未找到结果", Toast.LENGTH_SHORT)
 					.show();
 		} else {
-			Toast.makeText(PoiSearchDemo.this, result.getName() + ": " + result.getAddress(), Toast.LENGTH_SHORT)
-			.show();
+			//Toast.makeText(PoiSearchDemo.this, result.getName() + ": " + result.getAddress(), Toast.LENGTH_SHORT)
+			//.show();
+			Toast.makeText(PoiSearchDemo.this, Double.toString(result.getLocation().latitude)+
+					" "+Double.toString(result.getLocation().longitude), Toast.LENGTH_SHORT)
+					.show();
 		}
 	}
 

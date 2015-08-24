@@ -2,67 +2,67 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Hoang\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
-        <dex dex="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.2.2-9e4aae591b7f91de368d0f49918ad4c4ac57485f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Hoang\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
+        jar="C:\Users\Mark Nguyen\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
-        <dex dex="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\firebase-client-jvm-2.3.1-316d5753c4cdecd8eacc5a2bba18f73c83915660.jar" />
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\firebase-client-jvm-2.3.1-4b8ad826ef16395603d84cbec35c42c5c23d7a06.jar" />
     </item>
     <item
-        jar="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\libs\baidumapapi_v3_5_0.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="ba79500bb64218f10b5fd0d5ea54503b2bf6b3bb">
-        <dex dex="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\baidumapapi_v3_5_0-74bff32d33ad83a22b3ac1edeae54ec43d75d289.jar" />
-    </item>
-    <item
-        jar="C:\Users\Hoang\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
+        jar="C:\Users\Mark Nguyen\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
-        <dex dex="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\jackson-core-2.2.2-2d23d4e76d8720cf4159385cf70fe0bdb55aed49.jar" />
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\jackson-core-2.2.2-11e0fa8e9ce89cc577681a060454eda59d7264a2.jar" />
     </item>
     <item
-        jar="C:\Users\Hoang\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
+        jar="C:\Users\Mark Nguyen\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
-        <dex dex="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\tubesock-0.0.11-1271b12f358001b03a0c08e96567c7bef6284b5c.jar" />
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\tubesock-0.0.11-215b147ea722843c0e63a03058b0c81e532f40f4.jar" />
     </item>
     <item
-        jar="C:\Users\Hoang\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jar="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\libs\baidumapapi_v3_5_0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="ba79500bb64218f10b5fd0d5ea54503b2bf6b3bb">
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\baidumapapi_v3_5_0-59f5bdafa89960acc0fa87dbaca26786979954dd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mark Nguyen\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-2e193b024099ad55b8958cb275a4a250b365e52c.jar" />
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-1ce1641b48601ca841f0caf4571f9e09579596b0.jar" />
     </item>
     <item
-        jar="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\libs\locSDK_5.2.jar"
+        jar="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\libs\locSDK_5.2.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="389047997db28fcb848dc4247c5590a08b7ff769">
-        <dex dex="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\locSDK_5.2-2d91ab94338bde2efb5f620d352dc8f003b25a81.jar" />
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\locSDK_5.2-cfee6380c627a06d88f23fa1b9bbf376d7d9c3dd.jar" />
     </item>
     <item
-        jar="C:\Users\Hoang\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.3.1\be29b24233711c419ce935aa0a1b12ebc49d1c9a\firebase-client-android-2.3.1.jar"
+        jar="C:\Users\Mark Nguyen\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
         jumboMode="false"
         revision="22.0.0"
-        sha1="be29b24233711c419ce935aa0a1b12ebc49d1c9a">
-        <dex dex="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\firebase-client-android-2.3.1-c4e8aa4a241a5d08391ca037b322816e1d75eef5.jar" />
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.2.2-14d8821fe20d3859d1825d76e5ab4f498049b04c.jar" />
     </item>
     <item
-        jar="C:\Users\Hoang\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jar="C:\Users\Mark Nguyen\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
-        <dex dex="C:\Users\Hoang\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\jackson-databind-2.2.2-ea69bc1824b14e23416f842c8a1b8d566891f7f1.jar" />
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\jackson-databind-2.2.2-64c893bcc1cb904e84a000e50c6e922f840e0f8d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mark Nguyen\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.3.1\be29b24233711c419ce935aa0a1b12ebc49d1c9a\firebase-client-android-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="be29b24233711c419ce935aa0a1b12ebc49d1c9a">
+        <dex dex="C:\Users\Mark Nguyen\AndroidStudioProjects\BaiduMapsApiDemo\app\build\intermediates\pre-dexed\debug\firebase-client-android-2.3.1-b1fed0462a1eb2c1a6ab81f9a59cf7021a10252f.jar" />
     </item>
 
 </items>

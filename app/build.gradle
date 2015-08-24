@@ -27,5 +27,5 @@ dependencies {
     compile 'com.android.support:support-v4:19.1.0'
     compile files('libs/baidumapapi_v3_5_0.jar')
     compile files('libs/locSDK_5.2.jar')
-    compile 'com.firebase:firebase-client-android:2.3.1+'
+    compile 'com.firebase:firebase-client-android:2.3.1'
 }

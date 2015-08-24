@@ -60,10 +60,10 @@
         android:label="@string/app_name" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="kXZjF5CB4sunDfUV800AZvki" />
+            android:value="SVkHNMMsU5Eqxy3M0a9MsTVs" />
 
         <activity
-            android:name=".BMapApiDemoMain"
+            android:name=".sparkDemo.BMapApiDemoMain"
             android:configChanges="orientation|keyboardHidden"
             android:label="BaiduMapSDKDemo"
             android:screenOrientation="portrait" >
@@ -152,7 +152,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".PoiSearchDemo"
+            android:name=".sparkDemo.PoiSearchDemo"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/demo_name_poi"
             android:screenOrientation="portrait" >

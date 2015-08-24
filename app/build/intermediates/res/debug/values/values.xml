@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Hoang/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Mark%20Nguyen/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Hoang/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Mark%20Nguyen/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="CancelButton">Cancel</string>
     <string name="SearchButton">Search</string>
     <string name="SuccessfulButton">Successful</string>
     <string name="action_settings">Settings</string>
-    <string name="app_name">百度地图SDK DEMO</string>
+    <string name="app_name">Spark</string>
     <string name="cloud_search_tips"> \t\tLBS.云是百度地图针对LBS开发者推出的平台级服务。结合已有的地图API和SDK服务。通过开放服务端存储和计算能力,提供海量位置数据存储、检索、展示一体化解决方案。\n\n
           \t\t该服务对开发者免费开放。测试demo里写入了测试的ak。开发者可以使用测试ak查看 LBS.云检索的效果。如果开发者要使用自己的数据，请在申请ak后替换demo中的ak。\n\n
           \t\t如有任何关于LBS.云服务的问题,诸如如何申请ak、如何存储和检索数据等，请访问百度地图官方“LBS开放平台”。地址：http://lbsyun.baidu.com/  \n

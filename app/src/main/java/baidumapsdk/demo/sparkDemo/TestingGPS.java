@@ -38,13 +38,15 @@ public class TestingGPS extends Activity {
 
         //-Log.d("myTag", "TestingGPS");
 
-        LatLng point = new LatLng(39.035689, -94.588440);
+        //LatLng point = new LatLng(39.035689, -94.588440);
 
           //GPS TestingGPS
+        LatLng point=null;
         gps = new GPSTracker(TestingGPS.this);
         if(gps.canGetLocation()) {
-             latitude = gps.getLatitude();
-             longitude = gps.getLongitude();
+            latitude = gps.getLatitude();
+            longitude = gps.getLongitude();
+            point=new LatLng(latitude, longitude);
             Toast.makeText(getApplicationContext(), Double.toString(point.latitude)+"     "+Double.toString(point.longitude),
                     Toast.LENGTH_LONG).show();
         }

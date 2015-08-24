@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">百度地图SDK DEMO</string>
+    <string name="app_name">Spark</string>
     <string name="testingGPS">Testing GPS</string>
     <string name="testingOnClick">Testing OnClick</string>
     <string name="communicationChannelTesting">Testing Communication Channel</string>

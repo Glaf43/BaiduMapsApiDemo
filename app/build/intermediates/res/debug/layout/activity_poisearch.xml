@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.88"
-            android:text="餐厅" />
+            android:text="厦门第一广场" />
     </LinearLayout>
 
     <LinearLayout
@@ -69,4 +69,4 @@
         android:layout_height="match_parent"
         class="com.baidu.mapapi.map.SupportMapFragment" />
 
-</LinearLayout><!-- From: file:/C:/Users/Hoang/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/layout/activity_poisearch.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Mark%20Nguyen/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/layout/activity_poisearch.xml -->

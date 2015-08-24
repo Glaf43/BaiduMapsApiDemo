@@ -53,4 +53,4 @@
                 android:background="@drawable/next_"
                 android:onClick="nextClick" />
         </LinearLayout>
-    </RelativeLayout><!-- From: file:/C:/Users/Hoang/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/layout/activity_radarmap.xml -->
+    </RelativeLayout><!-- From: file:/C:/Users/Mark%20Nguyen/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/layout/activity_radarmap.xml -->
