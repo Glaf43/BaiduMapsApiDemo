@@ -3,4 +3,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" android:showAsAction="never" />
 </menu>
-<!-- From: file:/C:/Users/Mark%20Nguyen/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/menu/menu_testing.xml -->
+<!-- From: file:/C:/Users/Hoang/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/menu/menu_testing.xml -->

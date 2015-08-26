@@ -69,4 +69,4 @@
         android:layout_height="match_parent"
         class="com.baidu.mapapi.map.SupportMapFragment" />
 
-</LinearLayout><!-- From: file:/C:/Users/Mark%20Nguyen/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/layout/activity_poisearch.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Hoang/AndroidStudioProjects/BaiduMapsApiDemo/app/src/main/res/layout/activity_poisearch.xml -->
