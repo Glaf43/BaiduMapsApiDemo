@@ -95,6 +95,14 @@ public class BMapApiDemoMain extends Activity {
     }
 
     private static final DemoInfo[] demos = new DemoInfo[]{
+            new DemoInfo(R.string.testingOnClick,
+                    R.string.testingOnClick, SearchLocationTesting.class),
+            new DemoInfo(R.string.demo_title_poi,
+                    R.string.demo_title_poi, PoiSearchDemo.class),
+            new DemoInfo(R.string.testingGPS,
+                    R.string.testingGPS, TestingGPS.class),
+
+/*
             new DemoInfo(R.string.demo_title_basemap,
                     R.string.demo_desc_basemap, BaseMapDemo.class),
             new DemoInfo(R.string.demo_title_map_fragment,
@@ -137,6 +145,7 @@ public class BMapApiDemoMain extends Activity {
                     CloudSearchDemo.class),
             new DemoInfo(R.string.demo_title_opengl, R.string.demo_desc_opengl,
                     OpenglDemo.class)
+                    */
     };
 
     @Override

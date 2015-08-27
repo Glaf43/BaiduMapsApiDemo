@@ -3,9 +3,14 @@ package baidumapsdk.demo.sparkDemo;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.database.DataSetObserver;
 import android.graphics.Color;
+import android.media.Image;
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,6 +18,7 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +40,7 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
+import java.io.IOException;
 import java.util.Random;
 
 import baidumapsdk.demo.R;
@@ -61,6 +68,16 @@ public class CommunicationChannelTesting extends Activity {
     private Firebase mFirebaseRef;
     private ValueEventListener mConnectedListener;
     private ChatListAdapter mChatListAdapter;
+
+    private static MediaRecorder mediaRecorder;
+    private static MediaPlayer mediaPlayer;
+
+    private static String audioFilePath;
+    private static ImageButton stopButton;
+    private static ImageButton playButton;
+    private static ImageButton recordButton;
+
+    private boolean isRecording = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -176,6 +193,65 @@ public class CommunicationChannelTesting extends Activity {
             inputText.setText("");
         }
     }
+
+    public void stopClicked (View view)
+    {
+        stopButton.setEnabled(false);
+        playButton.setEnabled(true);
+
+        if (isRecording)
+        {
+            recordButton.setEnabled(false);
+            mediaRecorder.stop();
+            mediaRecorder.release();
+            mediaRecorder = null;
+            isRecording = false;
+        } else {
+            mediaPlayer.release();
+            mediaPlayer = null;
+            recordButton.setEnabled(true);
+        }
+    }
+    protected boolean hasMicrophone() {
+        PackageManager pmanager = this.getPackageManager();
+        return pmanager.hasSystemFeature(
+                PackageManager.FEATURE_MICROPHONE);
+    }
+
+
+    public void playAudio (View view) throws IOException
+    {
+        playButton.setEnabled(false);
+        recordButton.setEnabled(false);
+        stopButton.setEnabled(true);
+
+        mediaPlayer = new MediaPlayer();
+        mediaPlayer.setDataSource(audioFilePath);
+        mediaPlayer.prepare();
+        mediaPlayer.start();
+    }
+
+    public void recordAudio (View view) throws IOException
+    {
+        isRecording = true;
+        stopButton.setEnabled(true);
+        playButton.setEnabled(false);
+        recordButton.setEnabled(false);
+
+        try {
+            mediaRecorder = new MediaRecorder();
+            mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+            mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+            mediaRecorder.setOutputFile(audioFilePath);
+            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+            mediaRecorder.prepare();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        mediaRecorder.start();
+    }
+
     @Override
     public void onStart() {
         super.onStart();
@@ -209,6 +285,24 @@ public class CommunicationChannelTesting extends Activity {
                 // No-op
             }
         });
+
+        recordButton = (ImageButton) findViewById(R.id.recordButton);
+        playButton = (ImageButton) findViewById(R.id.playButton);
+        stopButton = (ImageButton) findViewById(R.id.stopButton);
+
+        if (!hasMicrophone())
+        {
+            stopButton.setEnabled(false);
+            playButton.setEnabled(false);
+            recordButton.setEnabled(false);
+        } else {
+            playButton.setEnabled(false);
+            stopButton.setEnabled(false);
+        }
+
+        audioFilePath =
+                Environment.getExternalStorageDirectory().getAbsolutePath()
+                        + "/myaudio.3gp";
     }
 
     @Override

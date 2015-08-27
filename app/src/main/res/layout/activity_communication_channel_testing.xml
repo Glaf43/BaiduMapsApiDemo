@@ -75,4 +75,32 @@
             android:src="@android:drawable/ic_menu_send" />
     </LinearLayout>
 
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:id="@+id/playButton"
+        android:src="@mipmap/ic_play"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:onClick="playAudio"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:id="@+id/recordButton"
+        android:src="@mipmap/ic_record"
+        android:layout_weight="0.02"
+        android:layout_below="@+id/playButton"
+        android:layout_alignParentRight="true"
+        android:onClick="recordAudio" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:id="@+id/stopButton"
+        android:layout_below="@+id/recordButton"
+        android:layout_alignRight="@+id/playButton"
+        android:src="@mipmap/ic_pause"
+        android:onClick="stopClicked" />
+
 </RelativeLayout>
