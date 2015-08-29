@@ -1,9 +1,5 @@
 All testing file now locate in 1 folder name Sparkdemo. 
 
-
-# Files used for testing
-# BaseMapDemo
+# Spark Demo
 # TestingGPS (previous name: Testing)
-# TestingOnclick
 # GPSTracker 
-# CommunicationTesting
