@@ -19,26 +19,7 @@ import android.widget.TextView;
 import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.VersionInfo;
 
-import baidumapsdk.demo.BusLineSearchDemo;
-import baidumapsdk.demo.CloudSearchDemo;
-import baidumapsdk.demo.FavoriteDemo;
-import baidumapsdk.demo.GeoCoderDemo;
-import baidumapsdk.demo.GeometryDemo;
-import baidumapsdk.demo.HeatMapDemo;
-import baidumapsdk.demo.LayersDemo;
-import baidumapsdk.demo.LocationDemo;
-import baidumapsdk.demo.MapControlDemo;
-import baidumapsdk.demo.MapFragmentDemo;
-import baidumapsdk.demo.MultiMapViewDemo;
-import baidumapsdk.demo.OfflineDemo;
-import baidumapsdk.demo.OpenBaiduMap;
-import baidumapsdk.demo.OpenglDemo;
-import baidumapsdk.demo.OverlayDemo;
 import baidumapsdk.demo.R;
-import baidumapsdk.demo.RadarDemo;
-import baidumapsdk.demo.RoutePlanDemo;
-import baidumapsdk.demo.ShareDemo;
-import baidumapsdk.demo.UISettingDemo;
 
 public class BMapApiDemoMain extends Activity {
     private static final String LTAG = BMapApiDemoMain.class.getSimpleName();
@@ -95,8 +76,8 @@ public class BMapApiDemoMain extends Activity {
     }
 
     private static final DemoInfo[] demos = new DemoInfo[]{
-            new DemoInfo(R.string.testingOnClick,
-                    R.string.testingOnClick, SearchLocationTesting.class),
+            new DemoInfo(R.string.SparkDemo,
+                    R.string.SparkDemo, InitiateActivity.class),
             new DemoInfo(R.string.demo_title_poi,
                     R.string.demo_title_poi, PoiSearchDemo.class),
             new DemoInfo(R.string.testingGPS,

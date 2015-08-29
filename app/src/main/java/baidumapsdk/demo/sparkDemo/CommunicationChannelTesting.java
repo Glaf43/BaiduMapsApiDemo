@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.DataSetObserver;
-import android.graphics.Color;
-import android.media.Image;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
@@ -16,7 +14,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -178,7 +175,7 @@ public class CommunicationChannelTesting extends Activity {
     }
 
     public void CancelCommunication(View view){
-        Intent intent = new Intent(CommunicationChannelTesting.this, SearchLocationTesting.class);
+        Intent intent = new Intent(CommunicationChannelTesting.this, SearchActivity.class);
         startActivity(intent);
     }
 

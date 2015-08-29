@@ -230,13 +230,21 @@
             android:label="@string/title_activity_testing" >
         </activity>
         <activity
-            android:name=".sparkDemo.SearchLocationTesting"
+            android:name=".sparkDemo.SearchActivity"
             android:label="@string/title_activity_testing_on_click" >
         </activity>
         <activity
             android:name=".sparkDemo.CommunicationChannelTesting"
             android:label="@string/title_activity_communication_channel_testing"
-            android:windowSoftInputMode="stateHidden">
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".sparkDemo.InitiateActivity"
+            android:label="@string/title_activity_initiate" >
+        </activity>
+        <activity
+            android:name=".sparkDemo.ShareActivity"
+            android:label="@string/title_activity_share" >
         </activity>
     </application>
 

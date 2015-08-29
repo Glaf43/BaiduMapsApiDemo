@@ -389,7 +389,7 @@ ADDED from AndroidManifest.xml:228:9
 		ADDED from AndroidManifest.xml:230:13
 	android:name
 		ADDED from AndroidManifest.xml:229:13
-activity#baidumapsdk.demo.sparkDemo.SearchLocationTesting
+activity#baidumapsdk.demo.sparkDemo.SearchActivity
 ADDED from AndroidManifest.xml:232:9
 	android:label
 		ADDED from AndroidManifest.xml:234:13
@@ -403,3 +403,15 @@ ADDED from AndroidManifest.xml:236:9
 		ADDED from AndroidManifest.xml:238:13
 	android:name
 		ADDED from AndroidManifest.xml:237:13
+activity#baidumapsdk.demo.sparkDemo.InitiateActivity
+ADDED from AndroidManifest.xml:241:9
+	android:label
+		ADDED from AndroidManifest.xml:243:13
+	android:name
+		ADDED from AndroidManifest.xml:242:13
+activity#baidumapsdk.demo.sparkDemo.ShareActivity
+ADDED from AndroidManifest.xml:245:9
+	android:label
+		ADDED from AndroidManifest.xml:247:13
+	android:name
+		ADDED from AndroidManifest.xml:246:13
