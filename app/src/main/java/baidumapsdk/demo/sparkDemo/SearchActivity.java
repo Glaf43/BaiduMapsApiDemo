@@ -58,10 +58,14 @@ public class SearchActivity extends Activity {
         button10=(Button) findViewById(R.id.ten);
         button15=(Button) findViewById(R.id.fifteen);
 
+        //set up map
+
         mMapView = (MapView) findViewById(R.id.bmapView);
         MapStatus ms = new MapStatus.Builder().overlook(-20).zoom(15).build();
 
         mBaiduMap = mMapView.getMap();
+
+        //set function when click the button
 
         mBaiduMap.setOnMarkerClickListener(new BaiduMap.OnMarkerClickListener() {
             public boolean onMarkerClick(final Marker marker) {

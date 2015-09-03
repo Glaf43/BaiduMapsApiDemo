@@ -59,7 +59,7 @@ public class CommunicationChannelTesting extends Activity {
     final LatLng point3 = new LatLng(24.455739, 118.085516);
     final LatLng point4 = new LatLng(24.458634, 118.088444);
 
-    private static final String FIREBASE_URL = "https://android-chat.firebaseio-demo.com";
+    private static final String FIREBASE_URL = "https://testtestest.firebaseio.com/";
 
     private String mUsername;
     private Firebase mFirebaseRef;

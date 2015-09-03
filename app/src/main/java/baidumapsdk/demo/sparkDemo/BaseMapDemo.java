@@ -25,6 +25,9 @@ import baidumapsdk.demo.R;
 /**
  * 演示MapView的基本用法
  */
+
+
+//just for testing
 public class BaseMapDemo extends Activity {
 	//@SuppressWarnings("unused")
 	//private static final String LTAG = BaseMapDemo.class.getSimpleName();
@@ -73,7 +76,6 @@ public class BaseMapDemo extends Activity {
 				.fromResource(R.drawable.icon_markd);
 
 		//构建MarkerOption，用于在地图上添加Marker
-
 
 
 		OverlayOptions option1 = new MarkerOptions()

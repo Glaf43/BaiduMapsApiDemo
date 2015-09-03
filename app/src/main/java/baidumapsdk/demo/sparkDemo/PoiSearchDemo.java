@@ -32,6 +32,8 @@ import baidumapsdk.demo.R;
 /**
  * 演示poi搜索功能
  */
+
+//still not undersand how it works
 public class PoiSearchDemo extends FragmentActivity implements
 		OnGetPoiSearchResultListener, OnGetSuggestionResultListener {
 
