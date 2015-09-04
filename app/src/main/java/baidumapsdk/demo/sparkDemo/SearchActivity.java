@@ -65,7 +65,7 @@ public class SearchActivity extends Activity {
 
         mBaiduMap = mMapView.getMap();
 
-        //set function when click the button
+        //enable the buttons
 
         mBaiduMap.setOnMarkerClickListener(new BaiduMap.OnMarkerClickListener() {
             public boolean onMarkerClick(final Marker marker) {
@@ -95,6 +95,9 @@ public class SearchActivity extends Activity {
             mBaiduMap.setMapStatus(msu);
 
         }
+
+    //make 4 button visible
+    //enable buttons
 
     public void enableRewardButton(){
         button0.setVisibility(View.VISIBLE);
@@ -169,6 +172,8 @@ public class SearchActivity extends Activity {
 
     }
 
+    //add marker to parking lot
+
     public void initialMarker(){
         mBaiduMap.setMapStatus(MapStatusUpdateFactory.newLatLng(point1));
         BitmapDescriptor bitmapA = BitmapDescriptorFactory
@@ -221,6 +226,10 @@ public class SearchActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+
+    //can search
+    //remove marker
+    //unenable buttons
     public void Cancel(View view){
         mMarkerA.remove();
         mMarkerB.remove();

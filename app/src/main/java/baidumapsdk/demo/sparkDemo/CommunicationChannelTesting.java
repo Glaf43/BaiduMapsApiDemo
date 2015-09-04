@@ -87,7 +87,7 @@ public class CommunicationChannelTesting extends Activity {
 
         mBaiduMap = mMapView.getMap();
 
-        //zoom
+        //zoom function
         MapStatusUpdate msu = MapStatusUpdateFactory.zoomTo(18.0f);
         mBaiduMap.setMapStatus(msu);
         initialMarker();
@@ -117,6 +117,7 @@ public class CommunicationChannelTesting extends Activity {
         });
     }
 
+    //put marker to the map
     public void initialMarker(){
         mBaiduMap.setMapStatus(MapStatusUpdateFactory.newLatLng(point1));
         BitmapDescriptor bitmapA = BitmapDescriptorFactory
@@ -170,15 +171,18 @@ public class CommunicationChannelTesting extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    //success button
+    //nothing
     public void Success(View view){
 
     }
-
+    //cancel and go back to SearchActivity
     public void CancelCommunication(View view){
         Intent intent = new Intent(CommunicationChannelTesting.this, SearchActivity.class);
         startActivity(intent);
     }
 
+    //Send message function
     private void sendMessage() {
         EditText inputText = (EditText) findViewById(R.id.messageInput);
         String input = inputText.getText().toString();
@@ -191,6 +195,8 @@ public class CommunicationChannelTesting extends Activity {
         }
     }
 
+
+    //Stop recording
     public void stopClicked (View view)
     {
         stopButton.setEnabled(false);
@@ -209,13 +215,15 @@ public class CommunicationChannelTesting extends Activity {
             recordButton.setEnabled(true);
         }
     }
+
+    //check if phone has microphone
     protected boolean hasMicrophone() {
         PackageManager pmanager = this.getPackageManager();
         return pmanager.hasSystemFeature(
                 PackageManager.FEATURE_MICROPHONE);
     }
 
-
+    //play audio
     public void playAudio (View view) throws IOException
     {
         playButton.setEnabled(false);
@@ -228,6 +236,7 @@ public class CommunicationChannelTesting extends Activity {
         mediaPlayer.start();
     }
 
+    //record Audio
     public void recordAudio (View view) throws IOException
     {
         isRecording = true;
@@ -297,6 +306,7 @@ public class CommunicationChannelTesting extends Activity {
             stopButton.setEnabled(false);
         }
 
+        //file contain the audio
         audioFilePath =
                 Environment.getExternalStorageDirectory().getAbsolutePath()
                         + "/myaudio.3gp";
@@ -308,6 +318,7 @@ public class CommunicationChannelTesting extends Activity {
         mFirebaseRef.getRoot().child(".info/connected").removeEventListener(mConnectedListener);
         mChatListAdapter.cleanup();
     }
+
     private void setupUsername() {
         SharedPreferences prefs = getApplication().getSharedPreferences("ChatPrefs", 0);
         mUsername = prefs.getString("username", null);
